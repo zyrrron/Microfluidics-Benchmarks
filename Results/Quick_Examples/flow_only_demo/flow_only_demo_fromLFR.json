@@ -9,7 +9,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -51,7 +51,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -62,27 +62,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -97,7 +79,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -108,27 +90,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -143,7 +107,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -154,27 +118,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -198,6 +144,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -248,6 +196,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -298,6 +248,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [

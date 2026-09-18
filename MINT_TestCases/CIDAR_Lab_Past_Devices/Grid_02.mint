@@ -1,12 +1,12 @@
 DEVICE Grid_02
 LAYER FLOW 
 PORT port_in portRadius=100 ;
-TREE input_tree spacing=1200 flowChannelWidth=100 in=1 out=2 ;
+TREE input_tree leafSpace=1200 flowChannelWidth=100 in=1 out=2 ;
 SQUARE CELL TRAP ct_1_1 chamberWidth=100 chamberLength=100 channelWidth=100 ;
 SQUARE CELL TRAP ct_1_2 chamberWidth=100 chamberLength=100 channelWidth=100 ;
 SQUARE CELL TRAP ct_2_1 chamberWidth=100 chamberLength=100 channelWidth=100 ;
 SQUARE CELL TRAP ct_2_2 chamberWidth=100 chamberLength=100 channelWidth=100 ;
-TREE output_tree spacing=1200 flowChannelWidth=100 in=1 out=2 ;
+TREE output_tree leafSpace=1200 flowChannelWidth=100 in=1 out=2 ;
 PORT port_out portRadius=100 ;
 
 

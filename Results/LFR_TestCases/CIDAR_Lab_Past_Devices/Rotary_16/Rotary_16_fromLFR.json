@@ -10,13 +10,13 @@
             ],
             "params": {
                 "flowChannelWidth": 5,
-                "spacing": 5,
+                "leafSpace": 5,
                 "in": 1.0,
                 "out": 16.0,
                 "width": 5,
                 "height": 5,
-                "stageLength": 5,
-                "componentSpacing": 1000.0,
+                "stageSpace": 5,
+                "componentSpacing": 2000.0,
                 "rotation": 0.0,
                 "mirrorByX": 0.0,
                 "mirrorByY": 0.0,
@@ -141,7 +141,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -183,7 +183,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -225,7 +225,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -267,7 +267,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -309,7 +309,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -344,52 +344,6 @@
             "y-span": 4860
         },
         {
-            "name": "port_1",
-            "id": "port_1",
-            "entity": "PORT",
-            "layers": [
-                "0"
-            ],
-            "params": {
-                "componentSpacing": 1000.0,
-                "portRadius": 1000.0,
-                "height": 1100.0,
-                "position": [
-                    -1,
-                    -1
-                ],
-                "ID": "port_1"
-            },
-            "ports": [
-                {
-                    "x": 1000,
-                    "y": 0,
-                    "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
-                    "layer": "FLOW"
-                }
-            ],
-            "x-span": 2000,
-            "y-span": 2000
-        },
-        {
             "name": "mixer_6",
             "id": "mixer_6",
             "entity": "MIXER",
@@ -397,7 +351,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -439,7 +393,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -481,7 +435,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -523,7 +477,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -565,7 +519,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -607,7 +561,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -649,7 +603,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -691,7 +645,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -733,7 +687,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -768,6 +722,34 @@
             "y-span": 4860
         },
         {
+            "name": "port_1",
+            "id": "port_1",
+            "entity": "PORT",
+            "layers": [
+                "0"
+            ],
+            "params": {
+                "componentSpacing": 2000.0,
+                "portRadius": 1000.0,
+                "height": 1100.0,
+                "position": [
+                    -1,
+                    -1
+                ],
+                "ID": "port_1"
+            },
+            "ports": [
+                {
+                    "x": 1000.0,
+                    "y": 1000.0,
+                    "label": "1",
+                    "layer": "FLOW"
+                }
+            ],
+            "x-span": 2000,
+            "y-span": 2000
+        },
+        {
             "name": "mixer_15",
             "id": "mixer_15",
             "entity": "MIXER",
@@ -775,7 +757,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -817,7 +799,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -859,7 +841,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -901,7 +883,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -943,7 +925,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -985,7 +967,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1027,7 +1009,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1069,7 +1051,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1111,7 +1093,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1153,7 +1135,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1195,7 +1177,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1237,7 +1219,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1279,7 +1261,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1321,7 +1303,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1363,7 +1345,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1373,7 +1355,7 @@
                 "mirrorByX": 0.0,
                 "mirrorByY": 0.0,
                 "edgeBend1": 300.0,
-                "edgeBend2": 400.0,
+                "edgeBend2": 300.0,
                 "position": [
                     -1,
                     -1
@@ -1405,7 +1387,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "channelWidth": 800.0,
                 "bendSpacing": 1230.0,
                 "numberOfBends": 1.0,
@@ -1415,7 +1397,7 @@
                 "mirrorByX": 0.0,
                 "mirrorByY": 0.0,
                 "edgeBend1": 300.0,
-                "edgeBend2": 300.0,
+                "edgeBend2": 400.0,
                 "position": [
                     -1,
                     -1
@@ -1447,7 +1429,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1458,27 +1440,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1493,7 +1457,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1504,27 +1468,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1539,7 +1485,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1550,27 +1496,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1585,7 +1513,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1596,27 +1524,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1631,7 +1541,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1642,27 +1552,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1677,7 +1569,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1688,27 +1580,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1723,7 +1597,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1734,27 +1608,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1769,7 +1625,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1780,27 +1636,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1815,7 +1653,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1826,27 +1664,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1861,7 +1681,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1872,27 +1692,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1907,7 +1709,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1918,27 +1720,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1953,7 +1737,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -1964,27 +1748,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -1999,7 +1765,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2010,27 +1776,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2045,7 +1793,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2056,27 +1804,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2091,7 +1821,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2102,27 +1832,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2137,7 +1849,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2148,27 +1860,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2183,7 +1877,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2194,27 +1888,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2229,7 +1905,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2240,27 +1916,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2275,7 +1933,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2286,27 +1944,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2321,7 +1961,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2332,27 +1972,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2367,7 +1989,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2378,27 +2000,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2413,7 +2017,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2424,27 +2028,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2459,7 +2045,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2470,27 +2056,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2505,7 +2073,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2516,27 +2084,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2551,7 +2101,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2562,27 +2112,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2597,7 +2129,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2608,27 +2140,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2643,7 +2157,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2654,27 +2168,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2689,7 +2185,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2700,27 +2196,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2735,7 +2213,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2746,27 +2224,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2781,7 +2241,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2792,27 +2252,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2827,7 +2269,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2838,27 +2280,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2873,7 +2297,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2884,27 +2308,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -2919,7 +2325,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -2969,7 +2375,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -2980,27 +2386,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3015,7 +2403,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3065,7 +2453,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3076,27 +2464,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3111,7 +2481,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3161,7 +2531,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3172,27 +2542,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3207,7 +2559,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3257,7 +2609,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3268,27 +2620,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3303,7 +2637,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3353,7 +2687,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3364,27 +2698,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3399,7 +2715,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3449,7 +2765,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3460,27 +2776,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3495,7 +2793,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3545,7 +2843,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "portRadius": 1000.0,
                 "height": 1100.0,
                 "position": [
@@ -3556,27 +2854,9 @@
             },
             "ports": [
                 {
-                    "x": 1000,
-                    "y": 0,
+                    "x": 1000.0,
+                    "y": 1000.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 2000,
-                    "y": 1000,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 1000,
-                    "y": 2000,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 1000,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -3591,7 +2871,7 @@
                 "1"
             ],
             "params": {
-                "componentSpacing": 1000,
+                "componentSpacing": 2000.0,
                 "valveRadius": 1200,
                 "gap": 600,
                 "width": 2400,
@@ -3650,6 +2930,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3688,7 +2970,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_6",
+                    "component": "mixer_15",
                     "port": "1"
                 }
             ],
@@ -3700,6 +2982,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3738,7 +3022,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_10",
+                    "component": "mixer_8",
                     "port": "1"
                 }
             ],
@@ -3750,6 +3034,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3788,7 +3074,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_5",
+                    "component": "mixer_11",
                     "port": "1"
                 }
             ],
@@ -3800,6 +3086,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3838,7 +3126,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_3",
+                    "component": "mixer_6",
                     "port": "1"
                 }
             ],
@@ -3850,6 +3138,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3888,7 +3178,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_8",
+                    "component": "mixer_4",
                     "port": "1"
                 }
             ],
@@ -3900,6 +3190,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3938,7 +3230,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_2",
+                    "component": "mixer_5",
                     "port": "1"
                 }
             ],
@@ -3950,6 +3242,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -3988,7 +3282,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_14",
+                    "component": "mixer_3",
                     "port": "1"
                 }
             ],
@@ -4000,6 +3294,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4038,7 +3334,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_15",
+                    "component": "mixer_10",
                     "port": "1"
                 }
             ],
@@ -4050,6 +3346,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4088,7 +3386,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_4",
+                    "component": "mixer_9",
                     "port": "1"
                 }
             ],
@@ -4100,6 +3398,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4150,6 +3450,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4188,7 +3490,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_9",
+                    "component": "mixer_14",
                     "port": "1"
                 }
             ],
@@ -4200,6 +3502,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4238,7 +3542,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_30",
+                    "component": "mixer_12",
                     "port": "1"
                 }
             ],
@@ -4250,6 +3554,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4288,7 +3594,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_13",
+                    "component": "mixer_16",
                     "port": "1"
                 }
             ],
@@ -4300,6 +3606,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4338,7 +3646,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_12",
+                    "component": "mixer_2",
                     "port": "1"
                 }
             ],
@@ -4350,6 +3658,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4388,7 +3698,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_11",
+                    "component": "mixer_13",
                     "port": "1"
                 }
             ],
@@ -4400,6 +3710,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4446,10 +3758,12 @@
             "id": "channel_17",
             "source": {
                 "component": "ytree_1",
-                "port": "6"
+                "port": "16"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4496,10 +3810,12 @@
             "id": "channel_18",
             "source": {
                 "component": "ytree_1",
-                "port": "4"
+                "port": "5"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4546,10 +3862,12 @@
             "id": "channel_19",
             "source": {
                 "component": "ytree_1",
-                "port": "16"
+                "port": "15"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4596,10 +3914,12 @@
             "id": "channel_20",
             "source": {
                 "component": "ytree_1",
-                "port": "17"
+                "port": "10"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4650,6 +3970,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4696,10 +4018,12 @@
             "id": "channel_22",
             "source": {
                 "component": "ytree_1",
-                "port": "14"
+                "port": "6"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4738,7 +4062,7 @@
         {
             "sinks": [
                 {
-                    "component": "port_1",
+                    "component": "port_8",
                     "port": "1"
                 }
             ],
@@ -4746,10 +4070,12 @@
             "id": "channel_23",
             "source": {
                 "component": "ytree_1",
-                "port": "2"
+                "port": "11"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4788,7 +4114,7 @@
         {
             "sinks": [
                 {
-                    "component": "port_8",
+                    "component": "port_1",
                     "port": "1"
                 }
             ],
@@ -4796,10 +4122,12 @@
             "id": "channel_24",
             "source": {
                 "component": "ytree_1",
-                "port": "7"
+                "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4846,10 +4174,12 @@
             "id": "channel_25",
             "source": {
                 "component": "ytree_1",
-                "port": "15"
+                "port": "17"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4896,10 +4226,12 @@
             "id": "channel_26",
             "source": {
                 "component": "ytree_1",
-                "port": "13"
+                "port": "7"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4946,10 +4278,12 @@
             "id": "channel_27",
             "source": {
                 "component": "ytree_1",
-                "port": "11"
+                "port": "14"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -4996,10 +4330,12 @@
             "id": "channel_28",
             "source": {
                 "component": "ytree_1",
-                "port": "5"
+                "port": "12"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5046,10 +4382,12 @@
             "id": "channel_29",
             "source": {
                 "component": "ytree_1",
-                "port": "8"
+                "port": "3"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5096,10 +4434,12 @@
             "id": "channel_30",
             "source": {
                 "component": "ytree_1",
-                "port": "12"
+                "port": "4"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5146,10 +4486,12 @@
             "id": "channel_31",
             "source": {
                 "component": "ytree_1",
-                "port": "3"
+                "port": "8"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5196,10 +4538,12 @@
             "id": "channel_32",
             "source": {
                 "component": "ytree_1",
-                "port": "9"
+                "port": "13"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5246,10 +4590,12 @@
             "id": "channel_33",
             "source": {
                 "component": "ytree_1",
-                "port": "10"
+                "port": "9"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5288,18 +4634,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_2",
+                    "component": "mixer_19",
                     "port": "1"
                 }
             ],
             "name": "channel_34",
             "id": "channel_34",
             "source": {
-                "component": "mixer_1",
+                "component": "mixer_18",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5338,18 +4686,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_21",
+                    "component": "mixer_2",
                     "port": "1"
                 }
             ],
             "name": "channel_35",
             "id": "channel_35",
             "source": {
-                "component": "mixer_20",
+                "component": "mixer_1",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5388,18 +4738,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_7",
+                    "component": "mixer_23",
                     "port": "1"
                 }
             ],
             "name": "channel_36",
             "id": "channel_36",
             "source": {
-                "component": "mixer_6",
+                "component": "mixer_22",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5438,18 +4790,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_11",
+                    "component": "mixer_30",
                     "port": "1"
                 }
             ],
             "name": "channel_37",
             "id": "channel_37",
             "source": {
-                "component": "mixer_10",
+                "component": "mixer_29",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5488,18 +4842,20 @@
         {
             "sinks": [
                 {
-                    "component": "port_1",
+                    "component": "mixer_28",
                     "port": "1"
                 }
             ],
             "name": "channel_38",
             "id": "channel_38",
             "source": {
-                "component": "mixer_5",
+                "component": "mixer_27",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5538,18 +4894,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_4",
+                    "component": "mixer_1",
                     "port": "1"
                 }
             ],
             "name": "channel_39",
             "id": "channel_39",
             "source": {
-                "component": "mixer_3",
+                "component": "mixer_15",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5588,18 +4946,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_23",
+                    "component": "mixer_9",
                     "port": "1"
                 }
             ],
             "name": "channel_40",
             "id": "channel_40",
             "source": {
-                "component": "mixer_22",
+                "component": "mixer_8",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5638,18 +4998,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_9",
+                    "component": "mixer_29",
                     "port": "1"
                 }
             ],
             "name": "channel_41",
             "id": "channel_41",
             "source": {
-                "component": "mixer_8",
+                "component": "mixer_28",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5688,18 +5050,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_27",
+                    "component": "mixer_12",
                     "port": "1"
                 }
             ],
             "name": "channel_42",
             "id": "channel_42",
             "source": {
-                "component": "mixer_26",
+                "component": "mixer_11",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5738,18 +5102,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_17",
+                    "component": "mixer_7",
                     "port": "1"
                 }
             ],
             "name": "channel_43",
             "id": "channel_43",
             "source": {
-                "component": "mixer_16",
+                "component": "mixer_6",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5788,18 +5154,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_3",
+                    "component": "mixer_5",
                     "port": "1"
                 }
             ],
             "name": "channel_44",
             "id": "channel_44",
             "source": {
-                "component": "mixer_2",
+                "component": "mixer_4",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5838,18 +5206,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_18",
+                    "component": "mixer_27",
                     "port": "1"
                 }
             ],
             "name": "channel_45",
             "id": "channel_45",
             "source": {
-                "component": "mixer_17",
+                "component": "mixer_26",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5888,18 +5258,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_29",
+                    "component": "mixer_20",
                     "port": "1"
                 }
             ],
             "name": "channel_46",
             "id": "channel_46",
             "source": {
-                "component": "mixer_28",
+                "component": "mixer_19",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5945,11 +5317,13 @@
             "name": "channel_47",
             "id": "channel_47",
             "source": {
-                "component": "mixer_14",
+                "component": "mixer_5",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -5988,18 +5362,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_16",
+                    "component": "mixer_4",
                     "port": "1"
                 }
             ],
             "name": "channel_48",
             "id": "channel_48",
             "source": {
-                "component": "mixer_15",
+                "component": "mixer_3",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6038,18 +5414,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_5",
+                    "component": "mixer_11",
                     "port": "1"
                 }
             ],
             "name": "channel_49",
             "id": "channel_49",
             "source": {
-                "component": "mixer_4",
+                "component": "mixer_10",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6088,18 +5466,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_8",
+                    "component": "mixer_10",
                     "port": "1"
                 }
             ],
             "name": "channel_50",
             "id": "channel_50",
             "source": {
-                "component": "mixer_7",
+                "component": "mixer_9",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6138,18 +5518,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_1",
+                    "component": "mixer_24",
                     "port": "1"
                 }
             ],
             "name": "channel_51",
             "id": "channel_51",
             "source": {
-                "component": "mixer_9",
+                "component": "mixer_23",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6188,18 +5570,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_10",
+                    "component": "mixer_8",
                     "port": "1"
                 }
             ],
             "name": "channel_52",
             "id": "channel_52",
             "source": {
-                "component": "mixer_30",
+                "component": "mixer_7",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6238,18 +5622,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_22",
+                    "component": "port_1",
                     "port": "1"
                 }
             ],
             "name": "channel_53",
             "id": "channel_53",
             "source": {
-                "component": "mixer_21",
+                "component": "mixer_14",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6288,18 +5674,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_20",
+                    "component": "mixer_13",
                     "port": "1"
                 }
             ],
             "name": "channel_54",
             "id": "channel_54",
             "source": {
-                "component": "mixer_19",
+                "component": "mixer_12",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6338,18 +5726,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_14",
+                    "component": "mixer_21",
                     "port": "1"
                 }
             ],
             "name": "channel_55",
             "id": "channel_55",
             "source": {
-                "component": "mixer_13",
+                "component": "mixer_20",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6388,18 +5778,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_24",
+                    "component": "mixer_17",
                     "port": "1"
                 }
             ],
             "name": "channel_56",
             "id": "channel_56",
             "source": {
-                "component": "mixer_23",
+                "component": "mixer_16",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6438,18 +5830,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_19",
+                    "component": "mixer_18",
                     "port": "1"
                 }
             ],
             "name": "channel_57",
             "id": "channel_57",
             "source": {
-                "component": "mixer_18",
+                "component": "mixer_17",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6488,18 +5882,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_13",
+                    "component": "mixer_3",
                     "port": "1"
                 }
             ],
             "name": "channel_58",
             "id": "channel_58",
             "source": {
-                "component": "mixer_12",
+                "component": "mixer_2",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6538,18 +5934,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_12",
+                    "component": "mixer_22",
                     "port": "1"
                 }
             ],
             "name": "channel_59",
             "id": "channel_59",
             "source": {
-                "component": "mixer_11",
+                "component": "mixer_21",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6588,18 +5986,20 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_28",
+                    "component": "mixer_14",
                     "port": "1"
                 }
             ],
             "name": "channel_60",
             "id": "channel_60",
             "source": {
-                "component": "mixer_27",
+                "component": "mixer_13",
                 "port": "2"
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6650,6 +6050,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6700,6 +6102,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6738,7 +6142,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_18",
+                    "component": "mixer_22",
                     "port": "1"
                 }
             ],
@@ -6750,6 +6154,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6788,7 +6194,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_19",
+                    "component": "mixer_23",
                     "port": "1"
                 }
             ],
@@ -6800,6 +6206,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6838,7 +6246,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_25",
+                    "component": "mixer_18",
                     "port": "1"
                 }
             ],
@@ -6850,6 +6258,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6888,7 +6298,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_28",
+                    "component": "mixer_27",
                     "port": "1"
                 }
             ],
@@ -6900,6 +6310,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6938,7 +6350,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_21",
+                    "component": "mixer_26",
                     "port": "1"
                 }
             ],
@@ -6950,6 +6362,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -6988,7 +6402,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_17",
+                    "component": "mixer_21",
                     "port": "1"
                 }
             ],
@@ -7000,6 +6414,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7038,7 +6454,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_23",
+                    "component": "mixer_20",
                     "port": "1"
                 }
             ],
@@ -7050,6 +6466,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7088,7 +6506,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_22",
+                    "component": "mixer_19",
                     "port": "1"
                 }
             ],
@@ -7100,6 +6518,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7138,7 +6558,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_15",
+                    "component": "mixer_29",
                     "port": "1"
                 }
             ],
@@ -7150,6 +6570,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7188,7 +6610,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_20",
+                    "component": "mixer_25",
                     "port": "1"
                 }
             ],
@@ -7200,6 +6622,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7238,7 +6662,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_27",
+                    "component": "mixer_17",
                     "port": "1"
                 }
             ],
@@ -7250,6 +6674,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7288,7 +6714,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_29",
+                    "component": "mixer_24",
                     "port": "1"
                 }
             ],
@@ -7300,6 +6726,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7350,6 +6778,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7388,7 +6818,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_26",
+                    "component": "mixer_30",
                     "port": "1"
                 }
             ],
@@ -7400,6 +6830,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7438,7 +6870,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_24",
+                    "component": "mixer_28",
                     "port": "1"
                 }
             ],
@@ -7450,6 +6882,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7500,6 +6934,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7538,7 +6974,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_6",
+                    "component": "mixer_15",
                     "port": "1"
                 }
             ],
@@ -7550,6 +6986,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7588,7 +7026,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_10",
+                    "component": "mixer_8",
                     "port": "1"
                 }
             ],
@@ -7600,6 +7038,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7638,7 +7078,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_5",
+                    "component": "mixer_11",
                     "port": "1"
                 }
             ],
@@ -7650,6 +7090,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7688,7 +7130,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_3",
+                    "component": "mixer_6",
                     "port": "1"
                 }
             ],
@@ -7700,6 +7142,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7738,7 +7182,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_8",
+                    "component": "mixer_4",
                     "port": "1"
                 }
             ],
@@ -7750,6 +7194,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7788,7 +7234,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_2",
+                    "component": "mixer_5",
                     "port": "1"
                 }
             ],
@@ -7800,6 +7246,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7838,7 +7286,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_14",
+                    "component": "mixer_3",
                     "port": "1"
                 }
             ],
@@ -7850,6 +7298,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7888,7 +7338,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_15",
+                    "component": "mixer_10",
                     "port": "1"
                 }
             ],
@@ -7900,6 +7350,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -7938,7 +7390,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_4",
+                    "component": "mixer_9",
                     "port": "1"
                 }
             ],
@@ -7950,6 +7402,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8000,6 +7454,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8038,7 +7494,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_9",
+                    "component": "mixer_14",
                     "port": "1"
                 }
             ],
@@ -8050,6 +7506,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8088,7 +7546,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_30",
+                    "component": "mixer_12",
                     "port": "1"
                 }
             ],
@@ -8100,6 +7558,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8138,7 +7598,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_13",
+                    "component": "mixer_16",
                     "port": "1"
                 }
             ],
@@ -8150,6 +7610,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8188,7 +7650,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_12",
+                    "component": "mixer_2",
                     "port": "1"
                 }
             ],
@@ -8200,6 +7662,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8238,7 +7702,7 @@
         {
             "sinks": [
                 {
-                    "component": "mixer_11",
+                    "component": "mixer_13",
                     "port": "1"
                 }
             ],
@@ -8250,6 +7714,8 @@
             },
             "params": {
                 "crossSection": 1,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "channelWidth": 600,
                 "start": [
@@ -8288,806 +7754,6 @@
         {
             "sinks": [
                 {
-                    "component": "port_2",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_94",
-            "id": "channel_94",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_94"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_3",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_95",
-            "id": "channel_95",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_95"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_4",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_96",
-            "id": "channel_96",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_96"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_5",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_97",
-            "id": "channel_97",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_97"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_7",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_98",
-            "id": "channel_98",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_98"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_1",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_99",
-            "id": "channel_99",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_99"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_8",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_100",
-            "id": "channel_100",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_100"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_9",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_101",
-            "id": "channel_101",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_101"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_10",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_102",
-            "id": "channel_102",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_102"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_11",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_103",
-            "id": "channel_103",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_103"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_12",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_104",
-            "id": "channel_104",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_104"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_13",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_105",
-            "id": "channel_105",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_105"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_14",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_106",
-            "id": "channel_106",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_106"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_15",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_107",
-            "id": "channel_107",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_107"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_16",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_108",
-            "id": "channel_108",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_108"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
-                    "component": "port_17",
-                    "port": "1"
-                }
-            ],
-            "name": "channel_109",
-            "id": "channel_109",
-            "source": {
-                "component": "port_6",
-                "port": "1"
-            },
-            "params": {
-                "crossSection": 1,
-                "connectionSpacing": 1000,
-                "channelWidth": 600,
-                "start": [
-                    "Point",
-                    -1,
-                    -1
-                ],
-                "end": [
-                    -1,
-                    -1
-                ],
-                "wayPoints": [
-                    [
-                        -1,
-                        -1
-                    ]
-                ],
-                "segments": [
-                    [
-                        [
-                            -1,
-                            -1
-                        ],
-                        [
-                            -1,
-                            -1
-                        ]
-                    ]
-                ],
-                "ID": "channel_109"
-            },
-            "layer": "0",
-            "paths": [],
-            "entity": "ROUNDED CHANNEL"
-        },
-        {
-            "sinks": [
-                {
                     "component": "valve_0",
                     "port": "1"
                 }
@@ -9105,6 +7771,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9159,6 +7827,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9213,6 +7883,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9267,6 +7939,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9321,6 +7995,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9375,6 +8051,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9429,6 +8107,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9483,6 +8163,8 @@
                 ],
                 "crossSection": 1,
                 "channelWidth": 600,
+                "length": 1000.0,
+                "minChannelLength": 1000.0,
                 "connectionSpacing": 1000,
                 "start": [
                     "Point",
@@ -9548,49 +8230,49 @@
     "valves": [
         {
             "componentid": "valve_0",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_0"
         },
         {
             "componentid": "valve_1",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_1"
         },
         {
             "componentid": "valve_2",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_2"
         },
         {
             "componentid": "valve_3",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_3"
         },
         {
             "componentid": "valve_4",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_4"
         },
         {
             "componentid": "valve_5",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_5"
         },
         {
             "componentid": "valve_6",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_6"
         },
         {
             "componentid": "valve_7",
-            "connectionid": "channel_38",
+            "connectionid": "channel_53",
             "type": "NORMALLY_OPEN",
             "controlportid": "Cport_7"
         }

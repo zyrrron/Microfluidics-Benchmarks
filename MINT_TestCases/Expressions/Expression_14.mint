@@ -17,7 +17,7 @@ DEVICE Expression_14
 
 LAYER FLOW 
 
-YTREE ytree_1 flowChannelWidth=5 spacing=5 width=5 height=5 stageLength=5 componentSpacing=1000.0 rotation=0.0 in=1.0 out=8.0 mirrorByX=0.0 mirrorByY=0.0 ;
+YTREE ytree_1 flowChannelWidth=5 leafSpace=5 width=5 height=5 stageSpace=5 componentSpacing=1000.0 rotation=0.0 in=1.0 out=8.0 mirrorByX=0.0 mirrorByY=0.0 ;
 PORT port_1 portRadius=2000 componentSpacing=1000.0 height=1100.0 ;
 PORT port_2 portRadius=2000 componentSpacing=1000.0 height=1100.0 ;
 NOZZLE DROPLET GENERATOR nozzle_droplet_generator_1 componentSpacing=1000.0 orificeSize=200.0 orificeLength=400.0 oilInputWidth=800.0 waterInputWidth=600.0 outputWidth=600.0 outputLength=600.0 height=250.0 rotation=0.0 mirrorByX=0.0 mirrorByY=0.0 ;

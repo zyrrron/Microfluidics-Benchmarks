@@ -10,7 +10,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -19,27 +19,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -55,7 +37,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -64,27 +46,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -100,7 +64,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -109,27 +73,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -145,7 +91,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -154,27 +100,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -189,7 +117,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -233,7 +161,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -277,7 +205,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -321,7 +249,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -365,7 +293,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -415,7 +343,7 @@
                 "channelWidth": 100,
                 "in": 3,
                 "out": 7,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "spacing": 10000.0,
                 "height": 250.0,
                 "rotation": 0.0,
@@ -500,7 +428,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -509,27 +437,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],

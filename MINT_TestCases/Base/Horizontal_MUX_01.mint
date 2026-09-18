@@ -1,6 +1,6 @@
 DEVICE Horizontal_MUX_01
 LAYER FLOW 
-H MUX m1 1 to 8 spacing=1000 flowChannelWidth=100 controlChannelWidth=20;
+H MUX m1 1 to 8 leafSpace=1000 flowChannelWidth=100 controlChannelWidth=20;
  PORT p1 portRadius=200;
 
  H BANK pb of 8  PORT portRadius=100  spacing=1000 ;

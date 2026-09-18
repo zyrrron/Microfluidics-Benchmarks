@@ -13,18 +13,18 @@
                 "controlChannelWidth": 20,
                 "in": 1,
                 "out": 8,
-                "componentSpacing": 1000.0,
-                "rotation": 0.0,
-                "width": 1600.0,
-                "length": 1600.0,
+                "leafSpace": 4000.0,
+                "stageSpace": 4000.0,
+                "valveWidthX": 1800.0,
+                "valveWidthY": 1000.0,
                 "height": 250.0,
-                "stageLength": 4000.0,
+                "rotation": 0.0,
                 "mirrorByX": 0.0,
                 "mirrorByY": 0.0,
-                "leafPitch": 4000.0,
+                "componentSpacing": 2000.0,
+                "width": 1800.0,
                 "valveWidth": 1800.0,
-                "valveWidthX": 1800.0,
-                "valveWidthY": 500.0,
+                "length": 1000.0,
                 "position": [
                     -1,
                     -1
@@ -87,37 +87,37 @@
                 },
                 {
                     "x": 0.0,
-                    "y": 5750.0,
+                    "y": 5500.0,
                     "label": "10",
                     "layer": "CONTROL"
                 },
                 {
                     "x": 30000.0,
-                    "y": 6450.0,
+                    "y": 6700.0,
                     "label": "11",
                     "layer": "CONTROL"
                 },
                 {
                     "x": 0.0,
-                    "y": 9850.0,
+                    "y": 9600.0,
                     "label": "12",
                     "layer": "CONTROL"
                 },
                 {
                     "x": 30000.0,
-                    "y": 10550.0,
+                    "y": 10800.0,
                     "label": "13",
                     "layer": "CONTROL"
                 },
                 {
                     "x": 0.0,
-                    "y": 13950.0,
+                    "y": 13700.0,
                     "label": "14",
                     "layer": "CONTROL"
                 },
                 {
                     "x": 30000.0,
-                    "y": 14650.0,
+                    "y": 14900.0,
                     "label": "15",
                     "layer": "CONTROL"
                 }
@@ -133,7 +133,7 @@
                 "0"
             ],
             "params": {
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 100.0,
                 "position": [
                     -1,
@@ -178,7 +178,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -187,27 +187,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -223,7 +205,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -232,27 +214,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -268,7 +232,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -277,27 +241,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -314,7 +260,7 @@
             "params": {
                 "width": 100,
                 "length": 200.0,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "rotation": 0.0,
                 "height": 250.0,
                 "position": [
@@ -361,7 +307,7 @@
             "params": {
                 "width": 200,
                 "length": 100.0,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "rotation": 0.0,
                 "height": 250.0,
                 "position": [
@@ -408,7 +354,7 @@
             "params": {
                 "width": 200,
                 "length": 100.0,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "rotation": 0.0,
                 "height": 250.0,
                 "position": [
@@ -454,7 +400,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -463,27 +409,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -499,7 +427,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -508,27 +436,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -544,7 +454,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -553,27 +463,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -635,7 +527,7 @@
             "sinks": [
                 {
                     "component": "p1",
-                    "port": "4"
+                    "port": "1"
                 }
             ],
             "name": "c1",
@@ -684,7 +576,7 @@
             "sinks": [
                 {
                     "component": "p2",
-                    "port": "4"
+                    "port": "1"
                 }
             ],
             "name": "c2",
@@ -733,7 +625,7 @@
             "sinks": [
                 {
                     "component": "p3",
-                    "port": "4"
+                    "port": "1"
                 }
             ],
             "name": "c3",
@@ -789,7 +681,7 @@
             "id": "cca",
             "source": {
                 "component": "cp1",
-                "port": "3"
+                "port": "1"
             },
             "params": {
                 "channelWidth": 20,
@@ -887,7 +779,7 @@
             "id": "ccc",
             "source": {
                 "component": "cp3",
-                "port": "3"
+                "port": "1"
             },
             "params": {
                 "channelWidth": 20,

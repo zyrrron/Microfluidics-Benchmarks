@@ -10,7 +10,7 @@
             ],
             "params": {
                 "portRadius": 200,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -19,27 +19,9 @@
             },
             "ports": [
                 {
-                    "x": 200,
-                    "y": 0,
+                    "x": 200.0,
+                    "y": 200.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 400,
-                    "y": 200,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 400,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 200,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -55,7 +37,7 @@
             ],
             "params": {
                 "portRadius": 200,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -64,27 +46,9 @@
             },
             "ports": [
                 {
-                    "x": 200,
-                    "y": 0,
+                    "x": 200.0,
+                    "y": 200.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 400,
-                    "y": 200,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 400,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 200,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -100,7 +64,7 @@
             ],
             "params": {
                 "portRadius": 200,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -109,27 +73,9 @@
             },
             "ports": [
                 {
-                    "x": 200,
-                    "y": 0,
+                    "x": 200.0,
+                    "y": 200.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 400,
-                    "y": 200,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 400,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 200,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -147,12 +93,12 @@
                 "flowChannelWidth": 100,
                 "in": 1,
                 "out": 2,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "rotation": 0.0,
-                "spacing": 4000.0,
+                "leafSpace": 4000.0,
                 "width": 2460.0,
                 "height": 250.0,
-                "stageLength": 4000.0,
+                "stageSpace": 4000.0,
                 "mirrorByX": 0.0,
                 "mirrorByY": 0.0,
                 "position": [
@@ -195,7 +141,7 @@
                 "chamberLength": 100,
                 "chamberWidth": 100,
                 "chamberSpacing": 30,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "feedingChannelWidth": 410.0,
                 "rotation": 270.0,
                 "height": 250.0,
@@ -235,7 +181,7 @@
                 "chamberLength": 100,
                 "chamberWidth": 100,
                 "chamberSpacing": 30,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "feedingChannelWidth": 410.0,
                 "rotation": 270.0,
                 "height": 250.0,

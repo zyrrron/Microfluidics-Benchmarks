@@ -96,9 +96,12 @@ poetry run fluigi compile_lfr \
   Microfluidics-Benchmarks/Quick_Examples/import_droplet_reaction.lfr
 ```
 
-or the scripts:
+or:
 
 ```sh
-./scripts/testLFR.sh Microfluidics-Benchmarks/Quick_Examples/import_droplet_reaction.lfr
-./scripts/run_all_Quick_Examples.sh   # every top-level *.lfr / *.mint → *_PR.json
+poetry run fluigi compile_lfr \
+  --pre-load Microfluidics-Benchmarks/Quick_Examples \
+  Microfluidics-Benchmarks/Quick_Examples/import_droplet_reaction.lfr
+# → Output/import_droplet_reaction/ (omit -o)
+./scripts/run_all_Quick_Examples.sh   # every top-level *.lfr / *.mint → Results/.../*_PR.json
 ```
