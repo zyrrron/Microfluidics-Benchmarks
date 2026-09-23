@@ -1,0 +1,53 @@
+// test_device_two_MUX4to1 — two 4-port valve trees on one main bus,
+// with a mid-trunk spur that forks to two vias.
+//
+//   in0..in3 --(c_in)--> ==== bus (main) ==== --(c_out)--> out0..out3
+//                              |
+//                          spur_node
+//                            / \
+//                        via0   via1
+//
+// The two leaf vias are not the MUX hubs. One channel is probed from
+// ``bus`` into ``spur_node``, then fans to ``via0`` / ``via1``.
+// (Use storage for the fork — a bare ``flow`` spur does not emit channels.
+//  Avoid ``/2`` — that maps to DROPLET SPLITTER.)
+//
+// distribute must write a port or storage (not a bare flow net) or
+// valves/Cports are dropped.
+
+module test_device_two_MUX4to1(
+    finput in0, in1, in2, in3,
+    foutput out0, out1, out2, out3,
+    control [0:1] c_in,
+    control [0:1] c_out
+);
+    #MAP "VIA" "storage"
+    storage bus, spur_node, via0, via1;
+
+    // Input 4-to-1 onto the main bus
+    distribute@(c_in)
+    begin
+        case(c_in)
+            2'b00 : bus <= in0;
+            2'b01 : bus <= in1;
+            2'b10 : bus <= in2;
+            2'b11 : bus <= in3;
+        endcase
+    end
+
+    // Output 1-to-4 from the main bus
+    distribute@(c_out)
+    begin
+        case(c_out)
+            2'b00 : out0 <= bus;
+            2'b01 : out1 <= bus;
+            2'b10 : out2 <= bus;
+            2'b11 : out3 <= bus;
+        endcase
+    end
+
+    // Probe one channel off the main bus, then fan to the two vias
+    assign spur_node = bus;
+    assign via0 = spur_node;
+    assign via1 = spur_node;
+endmodule

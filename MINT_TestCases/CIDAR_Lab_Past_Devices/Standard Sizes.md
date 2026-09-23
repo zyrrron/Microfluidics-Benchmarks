@@ -2,10 +2,10 @@
 
 ## MUX 
 ```
-spacing=500 
+leafSpace=500 
 width=400 
 length=100 
-stageLength=1000 
+stageSpace=1000 
 flowChannelWidth=100 
 controlChannelWidth=50
 ```
@@ -29,9 +29,9 @@ spacing=2000
 
 # TREE 
 ```
-spacing=500 
+leafSpace=500 
 flowChannelWidth=100 
-stageLength=500
+stageSpace=500
 ```
 
 # LOGIC ARRAY

@@ -10,7 +10,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -19,27 +19,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -55,7 +37,7 @@
             ],
             "params": {
                 "portRadius": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "height": 1100.0,
                 "position": [
                     -1,
@@ -64,27 +46,9 @@
             },
             "ports": [
                 {
-                    "x": 100,
-                    "y": 0,
+                    "x": 100.0,
+                    "y": 100.0,
                     "label": "1",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 200,
-                    "y": 100,
-                    "label": "2",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 100,
-                    "y": 200,
-                    "label": "3",
-                    "layer": "FLOW"
-                },
-                {
-                    "x": 0,
-                    "y": 100,
-                    "label": "4",
                     "layer": "FLOW"
                 }
             ],
@@ -104,7 +68,7 @@
                 "chamberLength": 100,
                 "chamberSpacing": 50,
                 "feedingChannelWidth": 100,
-                "componentSpacing": 1000.0,
+                "componentSpacing": 2000.0,
                 "rotation": 270.0,
                 "height": 250.0,
                 "mirrorByX": 0.0,
@@ -144,7 +108,7 @@
             "id": "c1",
             "source": {
                 "component": "p1",
-                "port": "2"
+                "port": "1"
             },
             "params": {
                 "channelWidth": 100,
@@ -186,7 +150,7 @@
             "sinks": [
                 {
                     "component": "p2",
-                    "port": "4"
+                    "port": "1"
                 }
             ],
             "name": "c2",
