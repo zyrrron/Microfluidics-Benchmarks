@@ -1,0 +1,17 @@
+// Several #CONSTRAIN lines on the same operator stack until the next assign.
+// Equivalent one-liner:
+//   #CONSTRAIN "+" numberOfBends = 3 AND channelWidth = 400 AND bendSpacing = 1200
+// Scheme B: mixer keys stay on "+" / "~"; FLOW-pipe keys use #CONSTRAIN "CHANNEL".
+// RoundedChannel = 0|1 (numbers only): 0 = square CHANNEL, 1 = rounded.
+// Default LFR compile is rounded. Demo is a general constrain target, not a
+// per-file compiler hook.
+module constrain_mixer(
+    finput in_a, in_b,
+    foutput out_1
+);
+    #CONSTRAIN "+" numberOfBends = 3
+    #CONSTRAIN "+" channelWidth = 400
+    #CONSTRAIN "+" bendSpacing = 1200
+    #CONSTRAIN "CHANNEL" RoundedChannel = 0
+    assign out_1 = in_a + in_b;
+endmodule

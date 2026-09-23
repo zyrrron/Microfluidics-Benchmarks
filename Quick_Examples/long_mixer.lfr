@@ -1,0 +1,12 @@
+//  Example: one MIXER whose serpentine is three bends long.
+//  Binary + already maps to MIXER — no #MAP needed.
+//  #CONSTRAIN sets MINT params on that next + assign (here numberOfBends).
+//  Contrast with multi_mixer.lfr: extra MIXER stages use unary ~, which
+//  does need #MAP "MIXER" "~".
+module long_mixer(
+    finput in_a, in_b,
+    foutput out_1
+);
+    #CONSTRAIN "+" numberOfBends = 3
+    assign out_1 = in_a + in_b;
+endmodule

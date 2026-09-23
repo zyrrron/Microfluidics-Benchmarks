@@ -1,7 +1,7 @@
 DEVICE Super_MUX_128
 LAYER FLOW
 
-H MUX mux_128 1 to 128 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_128 1 to 128 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 128 PORT portRadius=1000 spacing=4000;
 
@@ -140,20 +140,20 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4, cp5, cp6, cp7, cp8, cp9, cp10, cp11, cp12, cp13, cp14 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_128 130 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_128 131 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_128 132 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_128 133 channelWidth=100;
-CHANNEL cc5 from cp5 4 to mux_128 134 channelWidth=100;
-CHANNEL cc6 from cp6 2 to mux_128 135 channelWidth=100;
-CHANNEL cc7 from cp7 4 to mux_128 136 channelWidth=100;
-CHANNEL cc8 from cp8 2 to mux_128 137 channelWidth=100;
-CHANNEL cc9 from cp9 4 to mux_128 138 channelWidth=100;
-CHANNEL cc10 from cp10 2 to mux_128 139 channelWidth=100;
-CHANNEL cc11 from cp11 4 to mux_128 140 channelWidth=100;
-CHANNEL cc12 from cp12 2 to mux_128 141 channelWidth=100;
-CHANNEL cc13 from cp13 4 to mux_128 142 channelWidth=100;
-CHANNEL cc14 from cp14 2 to mux_128 143 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_128 130 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_128 131 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_128 132 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_128 133 channelWidth=300;
+CHANNEL cc5 from cp5 4 to mux_128 134 channelWidth=300;
+CHANNEL cc6 from cp6 2 to mux_128 135 channelWidth=300;
+CHANNEL cc7 from cp7 4 to mux_128 136 channelWidth=300;
+CHANNEL cc8 from cp8 2 to mux_128 137 channelWidth=300;
+CHANNEL cc9 from cp9 4 to mux_128 138 channelWidth=300;
+CHANNEL cc10 from cp10 2 to mux_128 139 channelWidth=300;
+CHANNEL cc11 from cp11 4 to mux_128 140 channelWidth=300;
+CHANNEL cc12 from cp12 2 to mux_128 141 channelWidth=300;
+CHANNEL cc13 from cp13 4 to mux_128 142 channelWidth=300;
+CHANNEL cc14 from cp14 2 to mux_128 143 channelWidth=300;
 
 END LAYER
 

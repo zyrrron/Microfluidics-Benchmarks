@@ -1,10 +1,10 @@
-// mux1to4 — syntax template for the 1-to-4 tree (MUX_04_Out).
+// test_device_v1_MUX_1to4 — 1-to-4 distribute tree (standalone).
 //
 //   in --(c_select)--> out0..out3
 //
 // Do not instantiate this from a parent: distribute inside an imported
 // module does not emit valves. Copy the case block into the parent.
-module mux1to4(
+module test_device_v1_MUX_1to4(
     finput in,
     foutput out0, out1, out2, out3,
     control [0:1] c_select

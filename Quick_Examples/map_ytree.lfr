@@ -1,0 +1,11 @@
+// #MAP "YTREE" "assign": next assign is a 1-to-4 tree.
+// FLOW IO is 5 pads: port 1 = trunk, ports 2..5 = leaves. The YTREE
+// primitive is the tree body (leafSpace / stageSpace); channels only
+// stub those pads to the module PORTs.
+module map_ytree(
+    finput in,
+    foutput [0:3] out
+);
+    #MAP "YTREE" "assign"
+    assign out[0:3] = in;
+endmodule

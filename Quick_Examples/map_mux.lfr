@@ -1,0 +1,9 @@
+// #MAP "MUX" "assign": next assign is a 1-to-4 MUX tree (trunk 1, leaves 2..5).
+// Compile attaches Super_MUX-style CONTROL pads (two per stage).
+module map_mux(
+    finput in,
+    foutput [0:3] out
+);
+    #MAP "MUX" "assign"
+    assign out[0:3] = in;
+endmodule

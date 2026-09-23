@@ -1,7 +1,7 @@
 DEVICE Super_MUX_256
 LAYER FLOW
 
-H MUX mux_256 1 to 256 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_256 1 to 256 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 256 PORT portRadius=1000 spacing=4000;
 
@@ -268,22 +268,22 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4, cp5, cp6, cp7, cp8, cp9, cp10, cp11, cp12, cp13, cp14, cp15, cp16 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_256 258 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_256 259 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_256 260 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_256 261 channelWidth=100;
-CHANNEL cc5 from cp5 4 to mux_256 262 channelWidth=100;
-CHANNEL cc6 from cp6 2 to mux_256 263 channelWidth=100;
-CHANNEL cc7 from cp7 4 to mux_256 264 channelWidth=100;
-CHANNEL cc8 from cp8 2 to mux_256 265 channelWidth=100;
-CHANNEL cc9 from cp9 4 to mux_256 266 channelWidth=100;
-CHANNEL cc10 from cp10 2 to mux_256 267 channelWidth=100;
-CHANNEL cc11 from cp11 4 to mux_256 268 channelWidth=100;
-CHANNEL cc12 from cp12 2 to mux_256 269 channelWidth=100;
-CHANNEL cc13 from cp13 4 to mux_256 270 channelWidth=100;
-CHANNEL cc14 from cp14 2 to mux_256 271 channelWidth=100;
-CHANNEL cc15 from cp15 4 to mux_256 272 channelWidth=100;
-CHANNEL cc16 from cp16 2 to mux_256 273 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_256 258 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_256 259 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_256 260 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_256 261 channelWidth=300;
+CHANNEL cc5 from cp5 4 to mux_256 262 channelWidth=300;
+CHANNEL cc6 from cp6 2 to mux_256 263 channelWidth=300;
+CHANNEL cc7 from cp7 4 to mux_256 264 channelWidth=300;
+CHANNEL cc8 from cp8 2 to mux_256 265 channelWidth=300;
+CHANNEL cc9 from cp9 4 to mux_256 266 channelWidth=300;
+CHANNEL cc10 from cp10 2 to mux_256 267 channelWidth=300;
+CHANNEL cc11 from cp11 4 to mux_256 268 channelWidth=300;
+CHANNEL cc12 from cp12 2 to mux_256 269 channelWidth=300;
+CHANNEL cc13 from cp13 4 to mux_256 270 channelWidth=300;
+CHANNEL cc14 from cp14 2 to mux_256 271 channelWidth=300;
+CHANNEL cc15 from cp15 4 to mux_256 272 channelWidth=300;
+CHANNEL cc16 from cp16 2 to mux_256 273 channelWidth=300;
 
 END LAYER
 

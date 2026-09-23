@@ -1,0 +1,13 @@
+// Override PUMP valve-pad Y and the CONTROL pipes into pads 3/4/5.
+// PUMP has no controlChannelWidth parameter; stamp the CONTROL pipes
+// with #CONSTRAIN "CTRLCHANNEL" the same way FLOW uses "CHANNEL".
+// Compare with map_pump.lfr (valveWidthY=1000, CONTROL channelWidth=300).
+module constrain_pump(
+    finput in,
+    foutput out
+);
+    #MAP "PUMP" "~"
+    #CONSTRAIN "~" valveWidthY = 800
+    #CONSTRAIN "CTRLCHANNEL" channelWidth = 200
+    assign out = ~in;
+endmodule

@@ -1,0 +1,10 @@
+// #MAP "NOZZLE DROPLET GENERATOR" "%": meter one aqueous stream.
+// For the 4-port oil/water nozzle, use droplet_generator.lfr instead.
+module map_droplet(
+    finput aqueous,
+    foutput droplets
+);
+    #MAP "NOZZLE DROPLET GENERATOR" "%"
+    #CONSTRAIN "%" rotation = 90
+    assign droplets = aqueous % 100;
+endmodule

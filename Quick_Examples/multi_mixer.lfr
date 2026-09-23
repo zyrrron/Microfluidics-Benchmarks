@@ -1,0 +1,27 @@
+//  Example: three MIXER stages in series, connected by CHANNEL pipes.
+//  Two inlets enter the first mixer; the mixed stream passes through two
+//  more mixers over ordinary channels and leaves from a single outlet.
+//  Each unary ~ is its own MIXER (numberOfBends stays at the library default 1).
+//  Contrast with long_mixer.lfr: one mixer, #CONSTRAIN "+" numberOfBends = 3.
+//
+//  FLOW pipe width / tip type: #CONSTRAIN "CHANNEL" on that assign (scheme B
+//  flushes after assign). Multiple keys: one line with AND, or stacked lines.
+//  First + inlets 300; inter-stage 400 square; last out 200 square.
+module multi_mixer(
+    finput in_a, in_b,
+    foutput out_1
+);
+    flow stage1, stage2, stage3;
+
+    #CONSTRAIN "CHANNEL" channelWidth = 400
+    assign stage1 = in_a + in_b;
+
+    #MAP "MIXER" "~"
+    assign stage2 = ~stage1;
+
+    #MAP "MIXER" "~"
+    assign stage3 = ~stage2;
+
+    #MAP "MIXER" "~"
+    assign out_1 = ~stage3;
+endmodule

@@ -1,7 +1,7 @@
 DEVICE Super_MUX_1024
 LAYER FLOW
 
-H MUX mux_1024 1 to 1024 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_1024 1 to 1024 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 1024 PORT portRadius=1000 spacing=4000;
 
@@ -1036,26 +1036,26 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4, cp5, cp6, cp7, cp8, cp9, cp10, cp11, cp12, cp13, cp14, cp15, cp16, cp17, cp18, cp19, cp20 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_1024 1026 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_1024 1027 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_1024 1028 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_1024 1029 channelWidth=100;
-CHANNEL cc5 from cp5 4 to mux_1024 1030 channelWidth=100;
-CHANNEL cc6 from cp6 2 to mux_1024 1031 channelWidth=100;
-CHANNEL cc7 from cp7 4 to mux_1024 1032 channelWidth=100;
-CHANNEL cc8 from cp8 2 to mux_1024 1033 channelWidth=100;
-CHANNEL cc9 from cp9 4 to mux_1024 1034 channelWidth=100;
-CHANNEL cc10 from cp10 2 to mux_1024 1035 channelWidth=100;
-CHANNEL cc11 from cp11 4 to mux_1024 1036 channelWidth=100;
-CHANNEL cc12 from cp12 2 to mux_1024 1037 channelWidth=100;
-CHANNEL cc13 from cp13 4 to mux_1024 1038 channelWidth=100;
-CHANNEL cc14 from cp14 2 to mux_1024 1039 channelWidth=100;
-CHANNEL cc15 from cp15 4 to mux_1024 1040 channelWidth=100;
-CHANNEL cc16 from cp16 2 to mux_1024 1041 channelWidth=100;
-CHANNEL cc17 from cp17 4 to mux_1024 1042 channelWidth=100;
-CHANNEL cc18 from cp18 2 to mux_1024 1043 channelWidth=100;
-CHANNEL cc19 from cp19 4 to mux_1024 1044 channelWidth=100;
-CHANNEL cc20 from cp20 2 to mux_1024 1045 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_1024 1026 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_1024 1027 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_1024 1028 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_1024 1029 channelWidth=300;
+CHANNEL cc5 from cp5 4 to mux_1024 1030 channelWidth=300;
+CHANNEL cc6 from cp6 2 to mux_1024 1031 channelWidth=300;
+CHANNEL cc7 from cp7 4 to mux_1024 1032 channelWidth=300;
+CHANNEL cc8 from cp8 2 to mux_1024 1033 channelWidth=300;
+CHANNEL cc9 from cp9 4 to mux_1024 1034 channelWidth=300;
+CHANNEL cc10 from cp10 2 to mux_1024 1035 channelWidth=300;
+CHANNEL cc11 from cp11 4 to mux_1024 1036 channelWidth=300;
+CHANNEL cc12 from cp12 2 to mux_1024 1037 channelWidth=300;
+CHANNEL cc13 from cp13 4 to mux_1024 1038 channelWidth=300;
+CHANNEL cc14 from cp14 2 to mux_1024 1039 channelWidth=300;
+CHANNEL cc15 from cp15 4 to mux_1024 1040 channelWidth=300;
+CHANNEL cc16 from cp16 2 to mux_1024 1041 channelWidth=300;
+CHANNEL cc17 from cp17 4 to mux_1024 1042 channelWidth=300;
+CHANNEL cc18 from cp18 2 to mux_1024 1043 channelWidth=300;
+CHANNEL cc19 from cp19 4 to mux_1024 1044 channelWidth=300;
+CHANNEL cc20 from cp20 2 to mux_1024 1045 channelWidth=300;
 
 END LAYER
 

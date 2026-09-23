@@ -19,8 +19,8 @@
 //
 // Import the module with a backtick-import of library/DIYcomponent.lfr first.
 module DIYcomponent(
-    finput up, right, down, left,
-    foutput _seed_out
+    finput up, right,
+    foutput down, left
 );
     #MAP "DIYCOMPONENT" "~"
     #CONSTRAIN "~" length = 5000
@@ -28,5 +28,6 @@ module DIYcomponent(
     #CONSTRAIN "~" height = 250
     #CONSTRAIN "~" componentSpacing = 1000
     // Seed assign so #MAP attaches; parent instances use instantiate_diy_component.
-    assign _seed_out = ~up;
+    // Standalone compile wires all four sides (up=1, right=2, down=3, left=4).
+    assign down = ~up;
 endmodule

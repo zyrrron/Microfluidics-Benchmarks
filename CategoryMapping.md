@@ -198,10 +198,11 @@ The MEMS extraction chip of Chen et al. (2008) is not present as an LFR file.
 - `LFR_TestCases/CIDAR_Lab_Past_Devices/Hmlp_Dual_Bank.lfr`
 - `LFR_TestCases/CIDAR_Lab_Past_Devices/MUX_96_Chambers.lfr` (multi-function included)
 - `Quick_Examples/test_device_MUX_4to1.lfr`
-- `Quick_Examples/test_device_two_MUX_4to1.lfr`
+- `Quick_Examples/test_device_v1_MUX_4to1.lfr`
+- `Quick_Examples/test_device_v1_MUX_1to4.lfr`
+- `Quick_Examples/test_device_v2_2MUX.lfr`
+- `Quick_Examples/test_device_v3_2MUX_fork.lfr`
 - `Quick_Examples/test_device.lfr`
-- `Quick_Examples/MUX_4to1.lfr`
-- `Quick_Examples/MUX_1to4.lfr`
 
 ### 11. Transposer (7)
 

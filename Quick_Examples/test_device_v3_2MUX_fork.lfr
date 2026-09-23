@@ -1,0 +1,25 @@
+// test_device_v3_2MUX_fork — same body as test_device_v2_2MUX, plus one
+// lateral VIA tap off the mid trunk.
+//
+//   in[0:3] --MUX (4-to-1)--> mid --MUX (1-to-4)--> out[0:3]
+//                              |
+//                              +-- VIA (tap)
+//
+// Compile keeps the mux_1 1 ↔ mux_2 1 trunk (like v2) and attaches one VIA
+// to that uncovered mid net. The VIA itself is the tap endpoint — no extra
+// foutput PORT. Port 1 is the single-port side of each MUX. Compile attaches
+// Super_MUX CONTROL pads (do not declare extra control IO here).
+module test_device_v3_2MUX_fork(
+    finput [0:3] in,
+    foutput [0:3] out
+);
+    flow mid;
+    #MAP "MUX" "assign"
+    assign mid = in[0:3];
+    #MAP "MUX" "assign"
+    #CONSTRAIN "assign" rotation = 180
+    assign out[0:3] = mid;
+    #MAP "VIA" "storage"
+    storage tap;
+    assign tap = mid;
+endmodule

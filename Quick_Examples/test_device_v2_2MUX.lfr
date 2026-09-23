@@ -1,0 +1,18 @@
+// test_device_v2_2MUX — two MUX4 primitives joined at the 1-port trunk.
+//
+//   in[0:3] --MUX (4-to-1)--> mid --MUX (1-to-4)--> out[0:3]
+//
+// Port 1 is the single-port side of each MUX. A FLOW channel connects
+// those two trunks. Leaves are ports 2..5. Compile attaches Super_MUX
+// CONTROL pads (do not declare extra control IO here).
+module test_device_v2_2MUX(
+    finput [0:3] in,
+    foutput [0:3] out
+);
+    flow mid;
+    #MAP "MUX" "assign"
+    assign mid = in[0:3];
+    #MAP "MUX" "assign"
+    #CONSTRAIN "assign" rotation = 180
+    assign out[0:3] = mid;
+endmodule

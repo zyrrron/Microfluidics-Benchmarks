@@ -1,7 +1,7 @@
 DEVICE Super_MUX_16
 LAYER FLOW
 
-H MUX mux_16 1 to 16 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_16 1 to 16 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 16 PORT portRadius=1000 spacing=4000;
 
@@ -28,14 +28,14 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4, cp5, cp6, cp7, cp8 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_16 18 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_16 19 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_16 20 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_16 21 channelWidth=100;
-CHANNEL cc5 from cp5 4 to mux_16 22 channelWidth=100;
-CHANNEL cc6 from cp6 2 to mux_16 23 channelWidth=100;
-CHANNEL cc7 from cp7 4 to mux_16 24 channelWidth=100;
-CHANNEL cc8 from cp8 2 to mux_16 25 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_16 18 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_16 19 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_16 20 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_16 21 channelWidth=300;
+CHANNEL cc5 from cp5 4 to mux_16 22 channelWidth=300;
+CHANNEL cc6 from cp6 2 to mux_16 23 channelWidth=300;
+CHANNEL cc7 from cp7 4 to mux_16 24 channelWidth=300;
+CHANNEL cc8 from cp8 2 to mux_16 25 channelWidth=300;
 
 END LAYER
 

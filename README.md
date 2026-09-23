@@ -56,21 +56,26 @@ MINT design files (`.mint`). **265** cases. Used when the pipeline starts from M
 
 ### Quick_Examples/
 
-Small LFR/MINT demos for one-off runs. Neptune `run_all_Quick_Examples.sh` synthesizes **top-level** `*.lfr` / `*.mint` only (latest batch: **19** LFR + **2** native MINT → `*_PR.json`).
+Small LFR/MINT demos for one-off runs. Neptune `run_all_Quick_Examples.sh` synthesizes **top-level** `*.lfr` / `*.mint` only (**28** LFR + native MINT demos → `*_PR.json`). One-off `fluigi` without `-o` writes `<Neptune>/Output/<stem>/` instead of `Results/`.
 
 | Path | Role |
 |------|------|
 | `flow_only_demo.lfr` / `.mint` | Flow layer only |
-| `flow_and_control_demo.lfr` / `.mint` | Flow + control (default `testLFR.sh` / `testMINT.sh` input). Native `.mint` may set MIXER `channelWidth` / `edgeBend*` for flush pipe ends in 3DuF. |
+| `flow_and_control_demo.lfr` / `.mint` | Flow + control. Native `.mint` may set MIXER `channelWidth` / `edgeBend*` for flush pipe ends in 3DuF. |
 | `import_mixer_and_incubator.lfr`, `import_parallel_premix.lfr`, `import_droplet_reaction.lfr` | Compose `library/` modules via `` `import "library/..." `` |
-| `mixer_3to1.lfr`, `diy_with_mixer_demo.lfr`, `test_DIY_fork.lfr`, `test_DIY_crossing.lfr` | Mixer / DIY demos. DIY keepout: `componentSpacing`, default **1000** µm (`library/DIYcomponent.lfr`) |
-| `test_device.lfr`, `test_device_MUX_4to1.lfr`, `test_device_two_MUX_4to1.lfr` | Distribute/MUX demos (`mux_hub`/`demux_hub` VIA storages on the two-MUX case) |
-| `DIYcomponent.lfr`, `two_in_mixer.lfr`, `three_in_mixer.lfr`, `incubator.lfr`, `droplet_generator.lfr`, `MUX_4to1.lfr`, `MUX_1to4.lfr` | Standalone copies of `library/` modules (also synthesized by the batch). Library files keep snake_case stems (`library/mux4to1.lfr`, `library/mux1to4.lfr`) to match their module names. |
+| `mixer_3to1.lfr`, `long_mixer.lfr`, `multi_mixer.lfr`, `diy_with_mixer_demo.lfr`, `test_DIY_fork.lfr`, `test_DIY_crossing.lfr` | Mixer / DIY demos. `long_mixer.lfr`: one MIXER via `+` with `#CONSTRAIN "+" numberOfBends = 3` (no `#MAP`). `multi_mixer.lfr`: three MIXER stages (`+` then two unary `#MAP "MIXER" "~"`). DIY keepout: `componentSpacing`, default **2000** µm (`library/DIYcomponent.lfr`) |
+| `map_mixer.lfr`, `map_pump.lfr`, `map_ytree.lfr`, `map_mux.lfr`, `map_via.lfr`, `map_droplet.lfr`, `constrain_mixer.lfr`, `constrain_pump.lfr` | `#MAP` / stacked `#CONSTRAIN` demos. Pump-like process = unary `#MAP "PUMP" "~"`, not a `pump` mode. `constrain_pump.lfr` sets `valveWidthY = 800`. Param list: Neptune `docs/LFR_TestCases_wiki/Compiler_Directives.md`. |
+| `test_device_v1_MUX_4to1.lfr`, `test_device_v1_MUX_1to4.lfr`, `test_device_v2_2MUX.lfr`, `test_device_v3_2MUX_fork.lfr` | Distribute/MUX demos. v1 = standalone 4-to-1 / 1-to-4 trees; v2 = two MUX trunks joined; v3 = v2 plus a tap PORT on the mid join |
+| `DIYcomponent.lfr`, `two_in_mixer.lfr`, `three_in_mixer.lfr`, `incubator.lfr`, `droplet_generator.lfr` | Standalone copies of `library/` modules (also synthesized by the batch). Library files keep snake_case stems (`library/mux4to1.lfr`, `library/mux1to4.lfr`). |
 | `library/` | Canonical reusable LFR blocks for `` `import "library/..." `` — see `library/README.md` |
 | `user_components_demo/` | `--component-library` black-box JSON demo. See `user_components_demo/README.md` |
 | `prompt_test/` | LLM prompt experiments (not part of the batch suite) |
 
 Consistency notes: `Quick_Examples/quick_examples_consistency.md`.
+
+### MINT_Illegal_Control_Fanin/
+
+Archive of the 27 MINT cases that used to sink every `Ctrlchannel_*` on one `VALVE3D`. Sources under `MINT_TestCases/` were rewritten (one valve per Cport). See `MINT_Illegal_Control_Fanin/README.md`. Helper: Neptune `scripts/fix_mint_control_fanin.py`.
 
 ### Results/
 
@@ -84,7 +89,7 @@ Generated outputs (MINT, JSON, placed/routed JSON, logs, SVG) produced by Neptun
 
 **Port conventions in sources:** `CIDAR_Lab_Past_Devices/Rotary_16` YTREE leaves use ports 2–17 (trunk 1). `Base/Transposer_Test.mint` VIA control uses port 1. `Mars/Pre_Processor_Dump.mint` MIXER uses ports 1–2.
 
-**Super_MUX series:** sources are `MINT_TestCases/Base/Super_MUX_{2,4,8,16,32,64,128,256,512,1024}.mint` (leafPitch 4000). TREE-PLACE order search is capped (`PRalgorithm/order_and_mirror.py`, `MAX_ORDER_SEARCH=4096`); n≥8 skips the n! permutation walk. Placed outputs live under `Results/MINT_TestCases/Base/Super_MUX_<n>/` as `Super_MUX_<n>_fromMINT.json`, `Super_MUX_<n>_fromMINT_PR.json`, and `Super_MUX_<n>_fromMINT_topology.pdf`. Batch logs are not kept in git.
+**Super_MUX series:** sources are `MINT_TestCases/Base/Super_MUX_{2,4,8,16,32,64,128,256,512,1024}.mint` (`leafSpace` 4000). TREE-PLACE order search is capped (`PRalgorithm/order_and_mirror.py`, `MAX_ORDER_SEARCH=4096`); n≥8 skips the n! permutation walk. Placed outputs live under `Results/MINT_TestCases/Base/Super_MUX_<n>/` as `Super_MUX_<n>_fromMINT.json`, `Super_MUX_<n>_fromMINT_PR.json`, and `Super_MUX_<n>_fromMINT_topology.pdf`. Batch logs are not kept in git.
 
 ---
 

@@ -1,7 +1,7 @@
 DEVICE Super_MUX_4
 LAYER FLOW
 
-H MUX mux_4 1 to 4 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_4 1 to 4 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 4 PORT portRadius=1000 spacing=4000;
 
@@ -16,10 +16,10 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_4 6 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_4 7 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_4 8 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_4 9 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_4 6 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_4 7 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_4 8 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_4 9 channelWidth=300;
 
 END LAYER
 

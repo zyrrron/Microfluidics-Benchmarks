@@ -1,7 +1,7 @@
 DEVICE Super_MUX_8
 LAYER FLOW
 
-H MUX mux_8 1 to 8 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_8 1 to 8 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 8 PORT portRadius=1000 spacing=4000;
 
@@ -20,12 +20,12 @@ LAYER CONTROL
 
 PORT cp1, cp2, cp3, cp4, cp5, cp6 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_8 10 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_8 11 channelWidth=100;
-CHANNEL cc3 from cp3 4 to mux_8 12 channelWidth=100;
-CHANNEL cc4 from cp4 2 to mux_8 13 channelWidth=100;
-CHANNEL cc5 from cp5 4 to mux_8 14 channelWidth=100;
-CHANNEL cc6 from cp6 2 to mux_8 15 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_8 10 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_8 11 channelWidth=300;
+CHANNEL cc3 from cp3 4 to mux_8 12 channelWidth=300;
+CHANNEL cc4 from cp4 2 to mux_8 13 channelWidth=300;
+CHANNEL cc5 from cp5 4 to mux_8 14 channelWidth=300;
+CHANNEL cc6 from cp6 2 to mux_8 15 channelWidth=300;
 
 END LAYER
 

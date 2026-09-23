@@ -9,15 +9,14 @@
 //     4 ------[ junction ]========== 2  (droplets)
 //    (water)   3 (bottom of junction)
 //
-// Default rotation 90 is the vertical flow-focusing pose (mixers below,
-// chamber above). This is a 180° flip of the previous 270 pose so the
-// 3DuF side oil holes sit on the left/right:
+// Default rotation 90 is 3DuF's clockwise vertical flow-focusing pose.
+// Terminals stay oil_left=3, oil_right=1, aqueous=4, droplets=2:
 //
-//                     droplets (2, horn up)
+//                     aqueous (4, water into the junction)
 //                          |
 //        oil_left (3) ----[ nozzle ]---- oil_right (1)
 //                          |
-//                 aqueous (4, middle water channel)
+//                     droplets (2, horn down)
 //
 // Do not put #MAP "NOZZLE DROPLET GENERATOR" in the parent — the map stays
 // here. Parent instances use instantiate_droplet_generator (like DIY).

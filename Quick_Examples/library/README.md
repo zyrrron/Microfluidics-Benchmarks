@@ -42,18 +42,18 @@ Rules that must be obeyed for imports to resolve:
 | File                       | Module               | Role                                            | Primitive mapping                   |
 |----------------------------|----------------------|-------------------------------------------------|-------------------------------------|
 | `DIYcomponent.lfr`         | `DIYcomponent`       | User black box (size + keepout, four sides)     | `DIYCOMPONENT` via `~`              |
-| `two_in_mixer.lfr`         | `two_in_mixer`       | Mix two input streams                           | `MIXER` via `~`                     |
-| `three_in_mixer.lfr`       | `three_in_mixer`     | Mix three input streams                         | `MIXER` via `~`                     |
+| `two_in_mixer.lfr`         | `two_in_mixer`       | Mix two input streams                           | `MIXER` via binary `+` (no `#MAP`)  |
+| `three_in_mixer.lfr`       | `three_in_mixer`     | Mix three input streams                         | `MIXER` via binary `+` (no `#MAP`)  |
 | `incubator.lfr`            | `incubator`          | Hold a stream for a reaction / incubation       | `INCUBATOR` via `&`                 |
 | `droplet_generator.lfr`    | `droplet_generator`  | 4-port nozzle (3-port oil/oil/water junction → 1-port droplet horn) | `NOZZLE DROPLET GENERATOR` via `~` |
 | `mux4to1.lfr`              | `mux4to1`            | 4→1 distribute tree (control bits → one-hot valves) | distribute / `VALVE3D`          |
 | `mux1to4.lfr`              | `mux1to4`            | 1→4 distribute tree                             | distribute / `VALVE3D`              |
 
-Top-level batch copies of the MUX trees use `MUX_1to4.lfr` / `MUX_4to1.lfr`
-so `run_all_Quick_Examples.sh` can synthesize them standalone; library files
-keep snake_case stems (`mux1to4.lfr` / `mux4to1.lfr`) to match their module
-names. Prefer `` `import "library/...." `` from composition demos; edit the
-canonical copy under `library/` first.
+Top-level batch copies of the MUX trees use `test_device_v1_MUX_1to4.lfr` /
+`test_device_v1_MUX_4to1.lfr` so `run_all_Quick_Examples.sh` can synthesize
+them standalone; library files keep snake_case stems (`mux1to4.lfr` /
+`mux4to1.lfr`) to match their module names. Prefer `` `import "library/...." ``
+from composition demos; edit the canonical copy under `library/` first.
 
 ## Example compositions
 
@@ -70,9 +70,9 @@ canonical copy under `library/` first.
   (facing oil pair + water on the 3-port junction, droplets out the horn) ->
   one pipe into a reaction chamber (`c_in` valve) -> one pipe out to
   `outlet` (`c_out` valve).
-- `test_device_MUX_4to1.lfr` / `test_device_two_MUX_4to1.lfr` — inline distribute
-  MUX demos (not library instances; distribute inside an imported module does
-  not emit valves/Cports).
+- `test_device_MUX_4to1.lfr` / `test_device_v2_2MUX.lfr` /
+  `test_device_v3_2MUX_fork.lfr` — inline distribute MUX demos (not library
+  instances; distribute inside an imported module does not emit valves/Cports).
 
 Compile from the **repo root**. `--pre-load Quick_Examples` is enough for
 any top-level demo that does `` `import "library/...." ``. `--variant`

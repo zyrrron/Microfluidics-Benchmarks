@@ -1,7 +1,7 @@
 DEVICE Super_MUX_2
 LAYER FLOW
 
-H MUX mux_2 1 to 2 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=100 width=1800 length=500 stageLength=3000;
+H MUX mux_2 1 to 2 leafPitch=4000 flowChannelWidth=500 controlChannelWidth=300 width=1800 length=500 stageLength=3000;
 PORT port_out portRadius=1000;
 H BANK port_in of 2 PORT portRadius=1000 spacing=4000;
 
@@ -14,8 +14,8 @@ LAYER CONTROL
 
 PORT cp1, cp2 portRadius=1000;
 
-CHANNEL cc1 from cp1 4 to mux_2 4 channelWidth=100;
-CHANNEL cc2 from cp2 2 to mux_2 5 channelWidth=100;
+CHANNEL cc1 from cp1 4 to mux_2 4 channelWidth=300;
+CHANNEL cc2 from cp2 2 to mux_2 5 channelWidth=300;
 
 END LAYER
 

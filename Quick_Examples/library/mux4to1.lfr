@@ -4,7 +4,7 @@
 //
 // Do not instantiate this from a parent: distribute inside an imported
 // module does not emit valves. Copy the case block into the parent
-// (see test_device_two_MUX4to1.lfr). The 1-port must be a real foutput.
+// (see test_device_v2_2MUX.lfr). The 1-port must be a real foutput.
 module mux4to1(
     finput in0, in1, in2, in3,
     foutput out,

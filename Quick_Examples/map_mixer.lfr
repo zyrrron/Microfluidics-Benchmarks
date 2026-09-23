@@ -1,0 +1,9 @@
+// Unary #MAP "MIXER" "~": extra mixer stage on one stream.
+// Contrast with two_in_mixer.lfr (binary + needs no #MAP).
+module map_mixer(
+    finput in,
+    foutput out
+);
+    #MAP "MIXER" "~"
+    assign out = ~in;
+endmodule
