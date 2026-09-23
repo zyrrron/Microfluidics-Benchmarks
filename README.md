@@ -73,6 +73,10 @@ Small LFR/MINT demos for one-off runs. Neptune `run_all_Quick_Examples.sh` synth
 
 Consistency notes: `Quick_Examples/quick_examples_consistency.md`.
 
+### Quick_Test/
+
+Archived one-off MUX / Super_MUX scratch files moved out of `Quick_Examples/` so the batch suite stays focused. Not run by `run_all_Quick_Examples.sh`.
+
 ### MINT_Illegal_Control_Fanin/
 
 Archive of the 27 MINT cases that used to sink every `Ctrlchannel_*` on one `VALVE3D`. Sources under `MINT_TestCases/` were rewritten (one valve per Cport). See `MINT_Illegal_Control_Fanin/README.md`. Helper: Neptune `scripts/fix_mint_control_fanin.py`.
