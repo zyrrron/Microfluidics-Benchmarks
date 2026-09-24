@@ -17,11 +17,14 @@ module multi_mixer(
     assign stage1 = in_a + in_b;
 
     #MAP "MIXER" "~"
+    #CONSTRAIN "CHANNEL" channelWidth = 600
+    #CONSTRAIN "CHANNEL" RoundedChannel = 0
     assign stage2 = ~stage1;
 
     #MAP "MIXER" "~"
     assign stage3 = ~stage2;
 
     #MAP "MIXER" "~"
+    #CONSTRAIN "CHANNEL" channelWidth = 200
     assign out_1 = ~stage3;
 endmodule

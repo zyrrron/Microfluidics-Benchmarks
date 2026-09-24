@@ -14,6 +14,7 @@ Neptune batch scripts live in the parent repo (`Neptune_2026/scripts/`). From th
 poetry run ./scripts/run_all_LFR.sh              # every LFR_TestCases/**/*.lfr → *_PR.json
 poetry run ./scripts/run_all_MINT.sh             # every MINT_TestCases/**/*.mint → *_PR.json
 poetry run ./scripts/run_all_Quick_Examples.sh   # top-level Quick_Examples demos only
+poetry run ./scripts/run_all_Quick_Test.sh       # Quick_Test Category-A fanin repairs (+ Super_MUX)
 poetry run ./scripts/run_all_LFR_no_PR.sh        # LFR compile only (no TREE-PLACE)
 poetry run ./scripts/run_all_MINT_no_PR.sh       # MINT compile only (no TREE-PLACE)
 poetry run ./scripts/run_all_Quick_Examples_no_PR.sh  # Quick_Examples compile only
@@ -63,7 +64,7 @@ Small LFR/MINT demos for one-off runs. Neptune `run_all_Quick_Examples.sh` synth
 | `flow_only_demo.lfr` / `.mint` | Flow layer only |
 | `flow_and_control_demo.lfr` / `.mint` | Flow + control. Native `.mint` may set MIXER `channelWidth` / `edgeBend*` for flush pipe ends in 3DuF. |
 | `import_mixer_and_incubator.lfr`, `import_parallel_premix.lfr`, `import_droplet_reaction.lfr` | Compose `library/` modules via `` `import "library/..." `` |
-| `mixer_3to1.lfr`, `long_mixer.lfr`, `multi_mixer.lfr`, `diy_with_mixer_demo.lfr`, `test_DIY_fork.lfr`, `test_DIY_crossing.lfr` | Mixer / DIY demos. `long_mixer.lfr`: one MIXER via `+` with `#CONSTRAIN "+" numberOfBends = 3` (no `#MAP`). `multi_mixer.lfr`: three MIXER stages (`+` then two unary `#MAP "MIXER" "~"`). DIY keepout: `componentSpacing`, default **2000** µm (`library/DIYcomponent.lfr`) |
+| `mixer_3to1.lfr`, `long_mixer.lfr`, `multi_mixer.lfr`, `diy_with_mixer_demo.lfr`, `test_DIY_fork.lfr`, `test_DIY_crossing.lfr` | Mixer / DIY demos. `long_mixer.lfr`: one MIXER via `+` with `#CONSTRAIN "+" numberOfBends = 3` (no `#MAP`). `multi_mixer.lfr`: `+` then three unary `#MAP "MIXER" "~"` stages; per-stage `#CONSTRAIN "CHANNEL"` (stage2 width 600 + square ends; final width 200) does not leak onto the next mixer. DIY keepout: `componentSpacing`, default **2000** µm (`library/DIYcomponent.lfr`) |
 | `map_mixer.lfr`, `map_pump.lfr`, `map_ytree.lfr`, `map_mux.lfr`, `map_via.lfr`, `map_droplet.lfr`, `constrain_mixer.lfr`, `constrain_pump.lfr` | `#MAP` / stacked `#CONSTRAIN` demos. Pump-like process = unary `#MAP "PUMP" "~"`, not a `pump` mode. `constrain_pump.lfr` sets `valveWidthY = 800`. Param list: Neptune `docs/LFR_TestCases_wiki/Compiler_Directives.md`. |
 | `test_device_v1_MUX_4to1.lfr`, `test_device_v1_MUX_1to4.lfr`, `test_device_v2_2MUX.lfr`, `test_device_v3_2MUX_fork.lfr` | Distribute/MUX demos. v1 = standalone 4-to-1 / 1-to-4 trees; v2 = two MUX trunks joined; v3 = v2 plus a tap PORT on the mid join |
 | `DIYcomponent.lfr`, `two_in_mixer.lfr`, `three_in_mixer.lfr`, `incubator.lfr`, `droplet_generator.lfr` | Standalone copies of `library/` modules (also synthesized by the batch). Library files keep snake_case stems (`library/mux4to1.lfr`, `library/mux1to4.lfr`). |
@@ -71,11 +72,16 @@ Small LFR/MINT demos for one-off runs. Neptune `run_all_Quick_Examples.sh` synth
 | `user_components_demo/` | `--component-library` black-box JSON demo. See `user_components_demo/README.md` |
 | `prompt_test/` | LLM prompt experiments (not part of the batch suite) |
 
-Consistency notes: `Quick_Examples/quick_examples_consistency.md`.
-
 ### Quick_Test/
 
-Archived one-off MUX / Super_MUX scratch files moved out of `Quick_Examples/` so the batch suite stays focused. Not run by `run_all_Quick_Examples.sh`.
+Re-run suite for the **27 Category-A control-fanin repairs** (copies of `MINT_Illegal_Control_Fanin/**/*.mint`, one `VALVE3D` per `Cport_*`) plus optional top-level probes (`Super_MUX_8.mint`, `Super_MUX_128.mint`). Details: `Quick_Test/README.md`. From Neptune root:
+
+```sh
+poetry run ./scripts/run_all_Quick_Test.sh
+# SKIP_TOPLEVEL=1  → only the 27 category-A cases
+```
+
+Results: `Results/Quick_Test/<Category>/<Stem>/`. Not part of `run_all_Quick_Examples.sh`.
 
 ### MINT_Illegal_Control_Fanin/
 
@@ -88,6 +94,7 @@ Generated outputs (MINT, JSON, placed/routed JSON, logs, SVG) produced by Neptun
 - `Results/LFR_TestCases/<Category>/<Stem>/`
 - `Results/MINT_TestCases/<Category>/<Stem>/`
 - `Results/Quick_Examples/<stem>/`
+- `Results/Quick_Test/<Category>/<Stem>/` (from `run_all_Quick_Test.sh`)
 
 `<Stem>` matches the source filename (`Dx_1`, `Mfd_005_Chip`, …). Inner artifacts (`dx1_fromLFR.json`, …) may still use the original module id until that case is recompiled. Neptune scripts glob `*_fromLFR.json` / `*_fromMINT.json` / `*_PR.json` so both names work.
 
