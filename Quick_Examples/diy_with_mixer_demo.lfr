@@ -14,7 +14,7 @@ module diy_with_mixer_demo(
         .out_1(mixed_flow)
     );
 
-    DIYcomponent #(length=12000, width=6000, height=1500) custom(
+    DIYcomponent #(length=12000, width=6000, depth=1500) custom(
         .up(mixed_flow),
         .right(None),
         .down(out),

@@ -5,7 +5,7 @@ module test_DIY_fork(
     finput in_up, in_left,
     foutput out_down
 );
-    DIYcomponent #(length=10000, width=8000, height=2000) fork(
+    DIYcomponent #(length=10000, width=8000, depth=2000) fork(
         .up(in_up),
         .right(None),
         .down(out_down),
